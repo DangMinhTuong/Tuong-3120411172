@@ -1,0 +1,314 @@
+/* Định nghĩa biến màu */
+:root {
+  --primary-color: #5a9bd4; /* Màu xanh nhẹ hài hòa */
+  --accent-color: #8dc1f1; /* Màu xanh nhạt dùng cho hover */
+  --background-light: #f0f8ff; /* Màu nền nhẹ */
+  --text-color: #333;
+}
+
+/* Reset CSS đơn giản */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Áp dụng font Poppins */
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--background-light);
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5%;
+  height: 80px;
+  background: radial-gradient(circle, #ffffff 0%, #e0f7ff 100%);
+  border: 2px solid var(--primary-color);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--primary-color);
+}
+
+/* Hero Section */
+.hero {
+  background: url("https://via.placeholder.com/1200x600") center/cover no-repeat;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.hero .highlight {
+  color: #00ff99;
+}
+
+.hero button {
+  padding: 10px 20px;
+  background-color: #00ff99;
+  color: var(--text-color);
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.hero button:hover {
+  background-color: #00cc7a;
+}
+
+/* About Section */
+.about {
+  padding: 60px 5%;
+  background-color: #fff;
+}
+
+.about h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2rem;
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-text p {
+  margin-bottom: 20px;
+}
+
+.about-image {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-image img {
+  width: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Projects Section */
+.projects {
+  padding: 60px 5%;
+  background-color: #f9f9f9;
+}
+
+.projects h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2rem;
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+  justify-items: center; /* Căn giữa nội dung từng item */
+  justify-content: center; /* Căn giữa toàn bộ grid */
+  max-width: 1200px; /* Giới hạn chiều rộng của container */
+  margin: 0 auto; /* Tự động căn giữa container */
+}
+
+.project-item {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.project-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.project-item h3 {
+  margin: 15px 0 10px;
+  font-size: 1.2rem;
+}
+
+.project-item p {
+  padding: 0 15px;
+  margin-bottom: 15px;
+}
+
+.project-item .btn {
+  display: inline-block;
+  margin-bottom: 15px;
+  padding: 8px 16px;
+  background-color: var(--primary-color);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.project-item .btn:hover {
+  background-color: var(--accent-color);
+}
+
+/* Contact Section - giảm chiều cao khung */
+.contact {
+  padding: 30px 5%; /* Giảm xuống 30px thay vì 60px */
+  background-color: #fff;
+  text-align: center;
+}
+
+.contact h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.contact p {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #f9f9f9;
+  padding: 10px; /* Giảm padding từ 20px xuống 10px */
+  border-radius: 8px;
+  width: 280px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.contact-item i {
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+.contact-item a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: var(--text-color);
+  transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+  color: var(--primary-color);
+}
+
+/* Footer */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  height: 80px;
+  background: radial-gradient(circle, #ffffff 0%, #e0f7ff 100%);
+  border: 2px solid var(--primary-color);
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 0.9rem;
+}
+
+/* Back to Top button */
+#backToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 10px 15px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  display: none;
+  border-radius: 4px;
+}
+
+#backToTop:hover {
+  background-color: #555;
+}
+
+/* Responsive (mobile) */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .about-container {
+    flex-direction: column;
+  }
+}

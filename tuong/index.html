@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang Cá Nhân - Đặng Minh Tường</title>
+
+    <!-- Link đến file CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <!-- Google Fonts (VD: Poppins) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- HEADER / NAVBAR -->
+    <header>
+      <div class="logo">Đặng Minh Tường</div>
+      <nav>
+        <ul>
+          <li><a href="#home">Trang Chủ</a></li>
+          <li><a href="#about">Giới Thiệu</a></li>
+          <li><a href="#projects">Dự Án</a></li>
+          <li><a href="#contact">Liên Hệ</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- SECTION: HERO (Home) -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1>Xin chào, mình là <span class="highlight">Đặng Minh Tường</span></h1>
+        <p>Mình là [vị trí / chuyên ngành / sở thích], đam mê sáng tạo và chia sẻ kiến thức.</p>
+        <button onclick="scrollToSection('about')">Tìm hiểu thêm</button>
+      </div>
+    </section>
+
+    <!-- SECTION: ABOUT -->
+    <section id="about" class="about">
+      <h2>Giới thiệu</h2>
+      <div class="about-container">
+        <div class="about-text">
+          <p>
+            Xin chào! Mình là <strong>Đặng Minh Tường</strong>, hiện đang theo học/làm việc tại <strong>[Trường/Đơn vị]</strong>. Mình là người trầm
+            tính, yêu thích sự yên tĩnh và giản dị. Mình đam mê những điều nhỏ bé nhưng đượm ý nghĩa như thưởng thức một tách trà, đọc sách dưới ánh
+            sáng dịu nhẹ và dạo bước trong những con phố quen thuộc.
+          </p>
+          <p>
+            Mục tiêu của mình là sống một cuộc đời đơn giản, không vội vàng mà biết trân trọng từng khoảnh khắc. Mình mong muốn tìm được sự đồng cảm
+            từ những người cùng chí hướng, để cùng nhau lan tỏa những giá trị chân thật và bình yên trong cuộc sống.
+          </p>
+        </div>
+        <!-- Ảnh đại diện -->
+        <div class="about-image">
+          <img src="./image/tuong.jpg" alt="Avatar của bạn" />
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: PROJECTS -->
+    <section id="projects" class="projects">
+      <h2>Dự án</h2>
+      <div class="project-list">
+        <!-- Project 1 -->
+        <div class="project-item">
+          <img src="https://via.placeholder.com/400x250" alt="Dự án 1" />
+          <h3>Tên Dự Án 1</h3>
+          <p>Mô tả ngắn gọn về dự án (mục tiêu, công nghệ sử dụng, kết quả đạt được...).</p>
+          <a href="https://github.com/your-github" target="_blank" class="btn">Xem chi tiết</a>
+        </div>
+        <!-- Project 2 -->
+        <div class="project-item">
+          <img src="https://via.placeholder.com/400x250" alt="Dự án 2" />
+          <h3>Tên Dự Án 2</h3>
+          <p>Mô tả ngắn gọn về dự án (mục tiêu, công nghệ sử dụng, kết quả đạt được...).</p>
+          <a href="https://github.com/your-github" target="_blank" class="btn">Xem chi tiết</a>
+        </div>
+        <!-- Project 3 -->
+        <div class="project-item">
+          <img src="https://via.placeholder.com/400x250" alt="Dự án 3" />
+          <h3>Tên Dự Án 3</h3>
+          <p>Mô tả ngắn gọn về dự án (mục tiêu, công nghệ sử dụng, kết quả đạt được...).</p>
+          <a href="https://github.com/your-github" target="_blank" class="btn">Xem chi tiết</a>
+        </div>
+        <!-- ... Thêm dự án khác nếu muốn -->
+      </div>
+    </section>
+
+    <!-- SECTION: CONTACT -->
+    <section id="contact" class="contact">
+      <h2>Liên Hệ</h2>
+      <p>Nếu bạn muốn trao đổi hay hợp tác, hãy liên hệ với mình qua:</p>
+      <div class="contact-container">
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <a href="mailto:tuong11012003@gmail.com">tuong11012003@gmail.com</a>
+        </div>
+        <div class="contact-item">
+          <i class="fab fa-github"></i>
+          <a href="https://github.com/DangMinhTuong" target="_blank">DangMinhTuong</a>
+        </div>
+        <div class="contact-item">
+          <i class="fab fa-facebook"></i>
+          <a
+            href="https://www.facebook.com/angminhtuong.878187?mibextid=wwXIfr&rdid=o5jWhCVGziMCU4Sx&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1XxkExNREe%2F%3Fmibextid%3DwwXIfr#"
+            target="_blank"
+            >facebook.com/Minh-Tường</a
+          >
+        </div>
+        <!-- Thêm các kênh khác nếu cần -->
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>© 2025 Đặng Minh Tường. All rights reserved.</p>
+    </footer>
+
+    <!-- Nút "Lên đầu trang" (Back to Top) -->
+    <button id="backToTop" onclick="scrollToTop()">↑</button>
+
+    <!-- Link đến file JS -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
